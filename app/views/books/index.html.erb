@@ -5,6 +5,11 @@
 </head>
 
 <body>
+	<% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 	<h2><strong>Books</strong></h2>
 
 	<table>
@@ -54,7 +59,6 @@
 		<% end %>
 
 </body>
-
 </html>
 
 
